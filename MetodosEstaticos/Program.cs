@@ -10,6 +10,8 @@ namespace MetodosEstaticos
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hola mundo");
+            Console.ReadLine();
         }
     }
 }
