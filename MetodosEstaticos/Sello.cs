@@ -15,7 +15,7 @@ namespace MetodosEstaticos
         //Metodo
         public static string Imprimir()
         {
-            return "algo";
+            return Sello.armarMensaje();
         }
 
         public static void Borrar()
@@ -26,8 +26,14 @@ namespace MetodosEstaticos
         public static void ImprimirEnColor()
         {
             Console.ForegroundColor = Sello.color;
-            Console.WriteLine(Sello.Imprimir);
+            Console.WriteLine(Sello.Imprimir());
 
+        }
+
+        private static string armarMensaje()
+        {
+            string retorno = "";
+            retorno = Sello.mensaje;
         }
 
     }
